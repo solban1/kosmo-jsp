@@ -1,0 +1,11 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "d:\\Apps\\apache-tomcat-10.1.11\\lib\\servlet-api.jar",
+        "d:\\Sol\\kosmo-java-advanced\\res\\ojdbc10.jar"
+    ],
+    "java.project.sourcePaths": [
+        "AddrList\\WEB-INF\\src"
+    ],
+    "java.project.outputPath": "AddrList\\WEB-INF\\classes"
+}

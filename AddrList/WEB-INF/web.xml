@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                      https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+  version="6.0"
+  metadata-complete="true">
+
+  <display-name>Welcome to Tomcat</display-name>
+  <description>
+     Welcome to Tomcat
+  </description>
+  <servlet>
+    <servlet-name>ListServlet</servlet-name>
+    <servlet-class>sol.sv.ListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListServlet</servlet-name>
+    <url-pattern>/list</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DelServlet</servlet-name>
+    <servlet-class>sol.sv.DelServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DelServlet</servlet-name>
+    <url-pattern>/del</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>BoardRootServlet</servlet-name>
+    <servlet-class>sol.board.BoardRootServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BoardRootServlet</servlet-name>
+    <url-pattern>/board/index.html</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>BoardListServlet</servlet-name>
+    <servlet-class>sol.board.BoardListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BoardListServlet</servlet-name>
+    <url-pattern>/board/list</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>BoardContentServlet</servlet-name>
+    <servlet-class>sol.board.BoardContentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BoardContentServlet</servlet-name>
+    <url-pattern>/board/content</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>BoardUpdateServlet</servlet-name>
+    <servlet-class>sol.board.BoardUpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BoardUpdateServlet</servlet-name>
+    <url-pattern>/board/update</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>BoardWriteServlet</servlet-name>
+    <servlet-class>sol.board.BoardWriteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BoardWriteServlet</servlet-name>
+    <url-pattern>/board/write</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
